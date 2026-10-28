@@ -1,6 +1,7 @@
 #!/bin/bash
 # Crea el repo publico insidetrades-data en tu GitHub, sube esta carpeta y lanza la primera corrida.
 set -e
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 cd "$(dirname "$0")"
 rm -rf __pycache__ alpha_terminal/__pycache__
 printf "__pycache__/\n*.pyc\n" > .gitignore
